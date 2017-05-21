@@ -245,15 +245,15 @@ $(document).ready(function () {
         -------------------------------  */
 
     $('#google-map').gMap({
-        latitude: 31.562130,
-        longitude: 74.319460,
+        latitude: 27.6644,
+        longitude: 85.3188,
         maptype: 'TERRAIN',
         scrollwheel: false,
         zoom: 14,
         markers: [
             {
-                latitude: 31.562130,
-                longitude: 74.319460,
+                latitude: 27.6644,
+                longitude: 85.3188,
                 html: "I am Here!",
                 icon: {
                     image: "images/icon/map_marker.png",
