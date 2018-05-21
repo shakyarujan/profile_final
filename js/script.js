@@ -2,12 +2,6 @@
     Remove Preloader
     ------------------  */
 
-$(window).load(function () {
-    $('#preloader').delay(300).fadeOut('slow', function () {
-        $('.profile-page, .resume-page, .contact-page, .portfolio-page').hide();
-    });
-});
-
 $(document).ready(function () {
 
     'use strict';
@@ -239,37 +233,4 @@ $(document).ready(function () {
         });
         return false;
     });
-
-    /*  -------------------------------
-         Google Map ( for contact page )
-        -------------------------------  */
-
-    $('#google-map').gMap({
-        latitude: 27.6644,
-        longitude: 85.3188,
-        maptype: 'TERRAIN',
-        scrollwheel: false,
-        zoom: 14,
-        markers: [
-            {
-                latitude: 27.6644,
-                longitude: 85.3188,
-                html: "I am Here!",
-                icon: {
-                    image: "images/icon/map_marker.png",
-                    iconsize: [46, 46],
-                    iconanchor: [12, 46]
-                }
-            }
-        ],
-        controls: {
-            panControl: false,
-            zoomControl: true,
-            mapTypeControl: false,
-            scaleControl: false,
-            streetViewControl: false,
-            overviewMapControl: false
-        }
-    });
-
 });
